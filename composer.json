@@ -7,14 +7,20 @@
             "name": "Machiel"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "CheatCodes\\LaravelWhoops\\": "src/"
+        }
+    },
     "require": {
         "filp/whoops": "^2.1",
         "illuminate/support": "^5.1",
         "illuminate/contracts": "^5.1"
     },
-    "autoload": {
-        "psr-4": {
-            "CheatCodes\\LaravelWhoops\\": "src/"
-        }
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "scripts": {
+        "sniff": "phpcs"
     }
 }
